@@ -1,0 +1,57 @@
+img.fish {
+  position: absolute;
+  height: 28px;
+  width: 49px;
+  left: 0;
+  top: 0;
+}
+
+.view {
+  width: 80%; /* Adjust based on your preference */
+  height: 60%; /* Adjust based on your preference */
+  display: flex; /* Ensures content within view is also flex */
+  justify-content: center; /* Center horizontally within view */
+  align-items: center; /* Center vertically within view */
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  /* Add your existing styling here (background, padding, etc.) */
+}
+
+.tank {
+  width: 80%; /* This will take up 100% of the .view container's width */
+  height: 60%; /* This will take up 100% of the .view container's height */
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent content from spilling outside the tank */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  height: 100vh;
+  justify-content: center; /* Center children vertically */
+  width: 100vh;
+}
+
+button {
+  margin-top: 20px; /* Add some space between the button and the tank */
+}
+
+.water {
+  position: relative;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #188fff;
+  z-index: -1; /* Keep it behind the fish */
+}

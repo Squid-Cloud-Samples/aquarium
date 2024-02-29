@@ -1,0 +1,57 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+#root {
+  display: flex; /* Make the root a flex container */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  max-width: 1280px; /* Your existing max-width */
+  margin: 0 auto; /* Center the root itself horizontally if its max-width is less than the viewport width */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 2rem;
+}
+
+/* .view {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+} */
+
+.view {
+  width: 80%; /* Adjust based on your preference */
+  height: 60%; /* Adjust based on your preference */
+  display: flex; /* Ensures content within view is also flex */
+  justify-content: center; /* Center horizontally within view */
+  align-items: center; /* Center vertically within view */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
